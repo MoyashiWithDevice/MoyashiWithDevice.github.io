@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 img{
-    width: 60px;
-    height: 40px;
+    width: 400px;
+    height: 270px;
 }
 .sets{
     display:flex;
@@ -15,8 +15,8 @@ img{
     text-align: center;
 }
 .items img{
-    width: 60px;
-    height: 40px;
+    width: 400px;
+    height: 270px;
     cursor: pointer;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
