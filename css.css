@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+img{
+    width: 250px;
+    height: 150px;
+}
+.sets{
+    display:flex;
+    gap:20px;
+}
+.sets img:hover{
+    transform: scale(1.025);
+}
+.items{
+    text-align: center;
+}
+.items img{
+    width: 250px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.items p{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
