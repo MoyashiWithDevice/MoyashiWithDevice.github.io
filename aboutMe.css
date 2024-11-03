@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+html, body {
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, white, black);
+}
+header{
+    display: flex;
+    background-color:black;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:80px;
+    align-items: center;
+}
+header h1{
+    display: flex;
+    color: white;
+    padding-left: 10px;
+    font-size: 40px;
+}
+.menu-list{
+    display: flex;
+}
+.menu{
+    color: white;
+    font-size: 20px;
+    font-weight:bold;
+    list-style:none;/*リストの点を消す*/
+    margin-right:30px;
+}
+.menu:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    position: absolute;
+    background-color: black;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    min-height: 350px;
+    color: white;
+    font-weight: bold;
+}
+.contact-me{
+    padding-top:5px;
+    padding-left: 5px;
+}
+
+.footer-contact {
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 3px;
+}
+
+.footer-contact img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
