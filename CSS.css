@@ -15,15 +15,18 @@ header{
     width:100%;
     height:80px;
     align-items: center;
+    z-index: 1001;
 }
 header h1{
     display: flex;
     color: white;
     padding-left: 10px;
     font-size: 40px;
+    cursor: pointer;
 }
 .menu-list{
     display: flex;
+    cursor: pointer;
 }
 .menu{
     color: white;
@@ -53,27 +56,38 @@ header h1{
     display: flex;
     gap: 20px; /* 各アイテム間に余白を追加 */
     overflow-x: auto; /* 横スクロールを有効に */
+    overflow-y: hidden; /*縦スクロールが有効化されていたので禁止に*/
     white-space: nowrap; /* アイテムが折り返されないように設定 */
 }
 
-
-.sets img:hover{
-    transform: scale(1.025);
-}
 .items{
     text-align: center;
+    background: linear-gradient(90deg,lightgray, gray);
+    border: 2px solid black ;
+}
+.item-name{
+    font-size: 20px;
+    font-weight:bold;
+    cursor: pointer;
 }
 .items img{
     width: 350px;
     height: 197px;
     cursor: pointer;
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .items p{
     margin-top: 0;
     margin-bottom: 10px;
 }
+.items :hover{
+    transform: scale(1.05);
+    transition: transform 0.7s ease, box-shadow 0.5s ease;
+}
+.prop{
+    cursor: pointer;
+}
+
 
 footer {
     position: absolute;
@@ -84,6 +98,7 @@ footer {
     min-height: 350px;
     color: white;
     font-weight: bold;
+    z-index: 10;
 }
 .contact-me{
     padding-top:5px;
@@ -106,3 +121,62 @@ footer {
     margin: 0;
 }
 
+
+.myModal {
+    display: none; /* 初期状態でモーダルを非表示 */
+    position: fixed; /* モーダルを画面に固定 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 背景を半透明にする */
+    z-index: 1000;
+}
+
+.modal-content {
+    /* モーダルのコンテンツスタイル設定 */
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    height: 20%;
+    z-index: 1001;
+}
+
+.modal-content p{
+    align-content: center;
+    width: 100%;
+    word-break: break-word; /* 単語が長すぎる場合、適切に折り返す */
+    white-space: normal; /* 通常のテキストの折り返し */
+}
+.modal-content.cat {
+    /* モーダルのコンテンツスタイル設定 */
+    padding: 0;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border: 1px solid #888;
+    align-items: center;
+    z-index: 1001;
+}
+.modal-content.cat img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* or use 'contain' if you want the whole image visible */
+}
+
+
+.closeModal {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 1002;
+}
+.closeModal:hover,
+.closeModal:focus {
+    color: red;
+    cursor: pointer;
+}
