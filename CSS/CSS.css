@@ -87,16 +87,15 @@ header h1{
     cursor: pointer;
 }
 
-
 footer {
     position: relative;
     background-color: black;
     bottom:0;
-    left: 0;
     width: 100%;
     height: 150px;
     color: white;
     font-weight: bold;
+    margin-top: 30px;
     z-index: 10;
 }
 .contact-me{
@@ -108,6 +107,11 @@ footer {
     display: flex;
     padding-left: 10px;
     margin-bottom: 3px;
+}
+.footer-contact > a{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer-contact img {

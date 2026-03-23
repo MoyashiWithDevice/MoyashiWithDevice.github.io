@@ -10,7 +10,6 @@ html, body {
 .main-content{
     min-height: 100%;
     position: relative;
-    padding-bottom: 150px;
 }
 header{
     display: flex;
@@ -99,7 +98,6 @@ header h1{
     padding-bottom: 30px;
 }
 
-
 footer {
     position: absolute;
     background-color: black;
@@ -119,6 +117,11 @@ footer {
     display: flex;
     padding-left: 10px;
     margin-bottom: 3px;
+}
+.footer-contact > a{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer-contact img {

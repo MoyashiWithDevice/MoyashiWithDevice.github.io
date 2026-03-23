@@ -88,12 +88,13 @@ header h1{
     height: 50px;
     border-radius: 10px;
 }
+
 footer {
     position: relative;
     background-color: black;
     bottom:0;
     width: 100%;
-    height: 150px;
+    flex: 1;
     color: white;
     font-weight: bold;
     margin-top: 30px;
@@ -108,6 +109,11 @@ footer {
     display: flex;
     padding-left: 10px;
     margin-bottom: 3px;
+}
+.footer-contact > a{
+    display: flex;
+    text-decoration: none;
+    color: inherit;
 }
 
 .footer-contact img {
